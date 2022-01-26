@@ -6,21 +6,28 @@ using RPG.Core;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour
+    public class Fighter : MonoBehaviour, IAction
     {
         [SerializeField] float weaponRange = 2f;
         Transform target;
         private void Update()
         {
             if (target == null) return;
+
             if (!GetIsInRange())
             {
                 GetComponent<Mover>().MoveTo(target.position);
             }
             else
             {
-                GetComponent<Mover>().Stop();
+                GetComponent<Mover>().Cancel();
+                AttackBehaviour();
             }
+        }
+
+        private void AttackBehaviour()
+        {
+            GetComponent<Animator>().SetTrigger("attack");
         }
 
         private bool GetIsInRange()
@@ -37,6 +44,13 @@ namespace RPG.Combat
         {
             target = null;
         }
+
+        // Animation Event
+        void Hit()
+        {
+
+        }
     }
+
 
 }
