@@ -13,8 +13,8 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &423517388972781954
+  m_Center: {x: 0, y: 0.84, z: 0}
+--- !u!114 &8387636674764986376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -584,10 +584,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5710320302327910517, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_Name
@@ -596,7 +592,7 @@ PrefabInstance:
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.009677472
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
@@ -606,27 +602,27 @@ PrefabInstance:
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.1038983
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.9976191
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.06896475
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
@@ -641,7 +637,7 @@ PrefabInstance:
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 172.091
       objectReference: {fileID: 0}
     - target: {fileID: 6009878351907453629, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
@@ -650,17 +646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934433428679414958, guid: d229a6dc847410947956ddf85b76962c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379303001988210174, guid: d229a6dc847410947956ddf85b76962c,
-        type: 3}
-      propertyPath: health
+      propertyPath: healthPoints
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
