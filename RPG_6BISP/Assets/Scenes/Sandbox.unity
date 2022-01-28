@@ -509,6 +509,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2620847872820176303, guid: 6eecb1203e862d54d944a87f90222977,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7490986607707939776, guid: 6eecb1203e862d54d944a87f90222977, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6eecb1203e862d54d944a87f90222977, type: 3}
@@ -893,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 3780792366920096998, guid: 40681ceeeab266c4c8693e67e0706221,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2891399109857769006, guid: 40681ceeeab266c4c8693e67e0706221,
         type: 3}
@@ -949,6 +954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902092257475666195, guid: 40681ceeeab266c4c8693e67e0706221,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 913825466984498590, guid: 40681ceeeab266c4c8693e67e0706221, type: 3}
@@ -1022,6 +1032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620847872820176303, guid: 6eecb1203e862d54d944a87f90222977,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7490986607707939776, guid: 6eecb1203e862d54d944a87f90222977, type: 3}
@@ -1116,6 +1131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620847872820176303, guid: 6eecb1203e862d54d944a87f90222977,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7490986607707939776, guid: 6eecb1203e862d54d944a87f90222977, type: 3}
