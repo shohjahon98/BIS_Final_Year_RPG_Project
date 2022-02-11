@@ -1067,6 +1067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2062596855820819943}
+  - component: {fileID: 1540007339624754419}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -1093,6 +1094,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1540007339624754419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062596856522039311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aae33f0f5249f147b3824eef823d786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentObjectPrefab: {fileID: 1664043875722795365, guid: 45d246a10e8da3f4c9316b663c7057ac,
+    type: 3}
 --- !u!1 &2062596856592950924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1160,6 @@ GameObject:
   - component: {fileID: 2062596856622202598}
   - component: {fileID: 2062596856622202599}
   - component: {fileID: 2062596856622202596}
-  - component: {fileID: 2062596856622202597}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1336,19 +1350,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.82, z: 0}
---- !u!114 &2062596856622202597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3442046602536435274, guid: 72d2ce744e369844f997ba236299dfae,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062596856622194971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f62831cf102ed4194092c7b7246318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2062596856642317822
 GameObject:
   m_ObjectHideFlags: 0
