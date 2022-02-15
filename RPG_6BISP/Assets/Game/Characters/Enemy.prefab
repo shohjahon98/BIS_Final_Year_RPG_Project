@@ -31,6 +31,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 3
+  patrolSpeedFraction: 0.2
 --- !u!114 &8387636674764986376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,6 +672,17 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2634070293676338560, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 8fbe543eb1448bd43ad2901b61989bc9,
+        type: 2}
+    - target: {fileID: 2634070293676338560, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 6225438328126208341}
     - target: {fileID: 431582793826353497, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_Speed
