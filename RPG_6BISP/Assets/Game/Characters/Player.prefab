@@ -881,8 +881,18 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 8fbe543eb1448bd43ad2901b61989bc9,
+      objectReference: {fileID: 11400000, guid: 527514c27528d084eaa39a2181762103,
         type: 2}
+    - target: {fileID: 2634070293676338560, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 1627233938469207274}
+    - target: {fileID: 2634070293676338560, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 1627233938469264514}
     - target: {fileID: 431582793826353497, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_Enabled
