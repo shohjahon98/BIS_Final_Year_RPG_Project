@@ -19,7 +19,7 @@ public class ARPGCameraController : MonoBehaviour {
 	public float minDistance = 3f; // Min distance the camera can be from target object.
 	public float zoomSpeed = 20f; // The speed the camera zooms in.
 	public float targetHeight = 1.0f; // The amount from the target object pivot the camera should look at.
-	public float camRotationSpeed = 70;// The speed at which the camera rotates.
+	public float camRotationSpeed = 7;// The speed at which the camera rotates.
 	public float camXAngle = 45.0f; // The camera x euler angle.
 	public bool fadeObjects = false; // Enable objects of a certain layer to be faded.
 	public List<int> layersToTransparent = new List<int>();	// The layers where we will allow transparency.
