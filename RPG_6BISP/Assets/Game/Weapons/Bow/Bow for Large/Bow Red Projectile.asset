@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bow Red Projectile
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 5af44dd035a76a6458bec793cc3e4ec0, type: 2}
-  equippedPrefab: {fileID: 1829914322100113183, guid: c3ec9a1ffdf53ec4f8c47a005d5221e2,
+  equippedPrefab: {fileID: 219581905023265684, guid: 3366ef2e0a8b2c0478a61207bec08aeb,
     type: 3}
   weaponDamage: 10
   weaponRange: 25
