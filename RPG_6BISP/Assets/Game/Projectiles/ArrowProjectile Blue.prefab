@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowProjectile Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 2306530223484068975, guid: 07d58e8539e905b47a85886e9f47ae30,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306530223484068975, guid: 07d58e8539e905b47a85886e9f47ae30,
+        type: 3}
+      propertyPath: isHoming
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1327896906385746220, guid: 07d58e8539e905b47a85886e9f47ae30,
         type: 3}
       propertyPath: m_LocalPosition.x
