@@ -10,8 +10,14 @@ PrefabInstance:
     - target: {fileID: 6778332309584598503, guid: 07d58e8539e905b47a85886e9f47ae30,
         type: 3}
       propertyPath: m_Name
-      value: ArrowProjectile Red
+      value: Arrow Projectile Red
       objectReference: {fileID: 0}
+    - target: {fileID: 2306530223484068975, guid: 07d58e8539e905b47a85886e9f47ae30,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 1372470885483287697, guid: 96dde3c072f9682439662b6a94c75af4,
+        type: 3}
     - target: {fileID: 1327896906385746220, guid: 07d58e8539e905b47a85886e9f47ae30,
         type: 3}
       propertyPath: m_LocalPosition.x
