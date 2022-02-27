@@ -51,23 +51,34 @@ namespace RPG.Movement
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
+
+        //[System.Serializable]
+        //struct MoverSaveData
+        //{
+        //   public SerializableVector3 position;
+        //   public SerializableVector3 rotation;
+        //}
         public object CaptureState()
         {
-
-            Dictionary<string, object> data = new Dictionary<string, object>();
-            data ["position"] = new SerializableVector3(transform.position);
-            data["rotation"] = new SerializableVector3(transform.eulerAngles);
-            return data;
+            //MoverSaveData data = new MoverSaveData();
+            //data.position = new SerializableVector3 (transform.position);
+            //data.rotation = new SerializableVector3(transform.eulerAngles);
+            //return data;
+            return new SerializableVector3(transform.position);
         }
 
         public void RestoreState(object state)
         {
-            Dictionary<string, object> data = (Dictionary<string, object>)state;
-            GetComponent<NavMeshAgent>().enabled = false;
-            transform.position = ((SerializableVector3) data["position"]).ToVector();
-            transform.eulerAngles = ((SerializableVector3)data["rotation"]).ToVector();
-            GetComponent<NavMeshAgent>().enabled = true;
 
+            //MoverSaveData data = (MoverSaveData)state;
+            //GetComponent<NavMeshAgent>().enabled = false;
+            //transform.position = data.position.ToVector();
+            //transform.eulerAngles = data.rotation.ToVector();
+            //GetComponent<NavMeshAgent>().enabled = true;
+            SerializableVector3 position = (SerializableVector3)state;
+            GetComponent<NavMeshAgent>().enabled = false;
+            transform.position = position.ToVector();
+            GetComponent<NavMeshAgent>().enabled = true;
         }
     }
 
