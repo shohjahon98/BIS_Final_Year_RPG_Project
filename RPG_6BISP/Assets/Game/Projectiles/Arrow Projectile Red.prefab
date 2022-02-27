@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[1].emitter
       value: 
       objectReference: {fileID: 4153419117901550712}
+    - target: {fileID: 19872866, guid: 55eb5c86fc25872498803bffe237d32c, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 19877576, guid: 55eb5c86fc25872498803bffe237d32c, type: 3}
       propertyPath: SubModule.subEmitters.Array.data[0].emitter
       value: 
