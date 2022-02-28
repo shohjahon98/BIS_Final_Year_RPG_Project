@@ -1,11 +1,9 @@
-﻿using RPG.Core;
-using System.Collections;
-using System.Collections.Generic;
+﻿using RPG.Resources;
 using UnityEngine;
 
 namespace RPG.Combat
 {
- [CreateAssetMenu(fileName ="Weapon", menuName = "Weapons/Make New Weapon", order =0)]
+    [CreateAssetMenu(fileName ="Weapon", menuName = "Weapons/Make New Weapon", order =0)]
  public class Weapon: ScriptableObject
     {
         [SerializeField] AnimatorOverrideController animatorOverride = null;
