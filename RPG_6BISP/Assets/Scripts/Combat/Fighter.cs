@@ -132,7 +132,7 @@ namespace RPG.Combat
             GetComponent<Animator>().ResetTrigger("attack");
             GetComponent<Animator>().SetTrigger("stopAttack");
         }
-        public IEnumerable <float> GetAdditiveModifier(Stat stat)
+        public IEnumerable <float> GetAdditiveModifiers(Stat stat)
         {
             if(stat == Stat.Damage)
             {
@@ -159,13 +159,6 @@ namespace RPG.Combat
             EquipWeapon(weapon);
 
         }
-
-        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        
     }
 
 

@@ -4903,6 +4903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vfx_Projectile_Fireball01
       objectReference: {fileID: 0}
+    - target: {fileID: 1961964258596952, guid: eca1ff6741def5a468081e17839fc91e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4033515565896200, guid: eca1ff6741def5a468081e17839fc91e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
