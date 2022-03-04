@@ -27676,6 +27676,8 @@ GameObject:
   - component: {fileID: 3786134792562513314}
   - component: {fileID: 3786134792562513315}
   - component: {fileID: 3786134792562513312}
+  - component: {fileID: 5726852685245748384}
+  - component: {fileID: 2083088341357744448}
   m_Layer: 0
   m_Name: Chr_FantasyHero_Preset_1
   m_TagString: Player
@@ -27811,7 +27813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b127f7fba526f94598ee70ad66d335e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 200
+  regenerationPercentage: 70
 --- !u!195 &3786134792562513314
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27887,6 +27889,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5726852685245748384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786134792562513313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25e63d9f927f7c4d8b2f77c974140fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLevel: 3
+  characterClass: 0
+  progression: {fileID: 11400000, guid: 05cc0f47356eb764599fa2100692e22f, type: 2}
+  levelUpParticleEffect: {fileID: 6075126845752632958, guid: 1dc65ece1ebba8149a512ca916402bec,
+    type: 3}
+  shouldUseModifiers: 1
+--- !u!114 &2083088341357744448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786134792562513313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54da6a43fb3c64046ad4fdce5a30badd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!1 &3786134792568417596
 GameObject:
   m_ObjectHideFlags: 0

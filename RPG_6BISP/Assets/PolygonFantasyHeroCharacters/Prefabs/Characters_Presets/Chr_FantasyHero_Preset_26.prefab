@@ -26460,6 +26460,7 @@ GameObject:
   - component: {fileID: 536162758021072791}
   - component: {fileID: 3439013068356996659}
   - component: {fileID: 7372354201755150692}
+  - component: {fileID: 8574217879013328207}
   m_Layer: 0
   m_Name: Chr_FantasyHero_Preset_26
   m_TagString: Untagged
@@ -26514,7 +26515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b127f7fba526f94598ee70ad66d335e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  regenerationPercentage: 70
 --- !u!114 &3561535202723104777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26689,6 +26690,23 @@ MonoBehaviour:
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 11400000, guid: c3dee39ed6ce6f24bbb573d59116763e, type: 2}
+--- !u!114 &8574217879013328207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407582978509010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25e63d9f927f7c4d8b2f77c974140fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLevel: 1
+  characterClass: 1
+  progression: {fileID: 11400000, guid: 05cc0f47356eb764599fa2100692e22f, type: 2}
+  levelUpParticleEffect: {fileID: 0}
+  shouldUseModifiers: 0
 --- !u!1 &1408054927822588
 GameObject:
   m_ObjectHideFlags: 0
