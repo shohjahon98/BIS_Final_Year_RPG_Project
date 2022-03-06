@@ -24,6 +24,8 @@ namespace RPG.Control
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float maxNavPathLength = 40f;
 
+        bool isDraggingUI = false;
+
         private void Awake()
         {
             health = GetComponent<Health>();
@@ -50,7 +52,19 @@ namespace RPG.Control
         {
             if(EventSystem.current.IsPointerOverGameObject())
             {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    isDraggingUI = false;
+                }
+                if (Input.GetMouseButtonDown(0))
+                {
+                    isDraggingUI = true;
+                }
                 SetCursor(CursorType.UI);
+                return true;
+            }
+            if (isDraggingUI)
+            {
                 return true;
             }
             return false;
