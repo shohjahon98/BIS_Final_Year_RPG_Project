@@ -137,16 +137,16 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3541823286443484096}
         m_MethodName: Spawn
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 13
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+    m_TypeName: RPG.Resources.Health+TakeDamageEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2634070293676338560
 MonoBehaviour:
@@ -254,7 +254,7 @@ PrefabInstance:
     - target: {fileID: 8690186628918989017, guid: c0cfe19850bfd63408d481b1f6ac9e0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 8690186628918989017, guid: c0cfe19850bfd63408d481b1f6ac9e0f,
         type: 3}
