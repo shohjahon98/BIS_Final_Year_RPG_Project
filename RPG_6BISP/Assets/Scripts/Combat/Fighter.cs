@@ -7,6 +7,7 @@ using RPG.Stats;
 using System.Collections.Generic;
 using GameDevTV.Utils;
 using System;
+using GameDevTV.Inventories;
 
 namespace RPG.Combat
 {
@@ -21,6 +22,7 @@ namespace RPG.Combat
 
 
         Health target;
+        //Equipment equipment;
         float timeSinceLastAttack = Mathf.Infinity;
         LazyValue<WeaponConfig> currentWeapon;
 
