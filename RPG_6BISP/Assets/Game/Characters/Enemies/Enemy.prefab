@@ -658,8 +658,19 @@ PrefabInstance:
       propertyPath: foreground
       value: 
       objectReference: {fileID: 6926423429378575703}
+    - target: {fileID: 5571202189808399838, guid: 83c9bdf2e2df7fe4aa09982eb8623aca,
+        type: 3}
+      propertyPath: rootCanvas
+      value: 
+      objectReference: {fileID: 4079573774999247186}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83c9bdf2e2df7fe4aa09982eb8623aca, type: 3}
+--- !u!223 &4079573774999247186 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5678884319948894479, guid: 83c9bdf2e2df7fe4aa09982eb8623aca,
+    type: 3}
+  m_PrefabInstance: {fileID: 8526155808055142493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6926423429378575703 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1607051563443889418, guid: 83c9bdf2e2df7fe4aa09982eb8623aca,
@@ -736,7 +747,12 @@ PrefabInstance:
     - target: {fileID: 1804882751742580181, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
@@ -748,6 +764,41 @@ PrefabInstance:
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5396911108624184269}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 8276236636255472173}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Aggrevate
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3087851999117484662}
+    - target: {fileID: 9067457807592703639, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6168075696150793396}
     - target: {fileID: 7500770205036369345, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_Radius
@@ -810,6 +861,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b127f7fba526f94598ee70ad66d335e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &6168075696150793396 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3340496259156090041, guid: d229a6dc847410947956ddf85b76962c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8917896423531139085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5396911108624184269 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3541823286443484096, guid: d229a6dc847410947956ddf85b76962c,
@@ -825,6 +882,12 @@ MonoBehaviour:
 --- !u!1 &3818376847565521016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5710320302327910517, guid: d229a6dc847410947956ddf85b76962c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8917896423531139085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3087851999117484662 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5843695961929183867, guid: d229a6dc847410947956ddf85b76962c,
     type: 3}
   m_PrefabInstance: {fileID: 8917896423531139085}
   m_PrefabAsset: {fileID: 0}
