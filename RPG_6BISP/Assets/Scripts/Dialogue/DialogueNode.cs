@@ -16,6 +16,10 @@ namespace RPG.Dialogue
         List<string> children = new List<string>();
         [SerializeField] 
         Rect rect = new Rect(0, 0, 200, 100);
+        [SerializeField]
+        string onEnterAction;
+        [SerializeField]
+        string onExitAction;
 
         public Rect GetRect()
         {
@@ -36,15 +40,15 @@ namespace RPG.Dialogue
             return isPlayerSpeaking;
         }
 
-        //public string GetOnEnterAction()
-        //{
-        //    return onEnterAction;
-        //}
+        public string GetOnEnterAction()
+        {
+            return onEnterAction;
+        }
 
-        //public string GetOnExitAction()
-        //{
-        //    return onExitAction;
-        //}
+        public string GetOnExitAction()
+        {
+            return onExitAction;
+        }
 
         //public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
         //{
