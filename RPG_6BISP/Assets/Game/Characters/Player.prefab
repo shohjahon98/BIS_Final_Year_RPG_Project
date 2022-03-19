@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364844a5882e16945b341d6f0368c424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDialogue: {fileID: 11400000, guid: 594ac4f7b8109384690d264b905c46eb, type: 2}
+  playerName: Wolverine
 --- !u!114 &2597585230946504145
 MonoBehaviour:
   m_ObjectHideFlags: 0
