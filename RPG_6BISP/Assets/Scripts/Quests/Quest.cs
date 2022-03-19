@@ -10,8 +10,8 @@ namespace RPG.Quests
     [CreateAssetMenu(fileName = "Quest", menuName = "RPG_6BISP/Quest", order = 0)]
     public class Quest : ScriptableObject
     {
-        [SerializeField] string[] objectives;
-        //[SerializeField] List<Objective> objectives = new List<Objective>();
+        
+        [SerializeField] List<string> objectives = new List<string>();
         //[SerializeField] List<Reward> rewards = new List<Reward>();
 
         //[System.Serializable]
@@ -38,7 +38,7 @@ namespace RPG.Quests
 
          public int GetObjectiveCount()
          {
-             return objectives.Length;
+             return objectives.Count;
          }
 
           public IEnumerable<string> GetObjectives()
@@ -51,17 +51,18 @@ namespace RPG.Quests
         //    return rewards;
         //}
 
-        //public bool HasObjective(string objectiveRef)
-        //{
-        //    foreach (var objective in objectives)
-        //    {
-        //        if (objective.reference == objectiveRef)
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
+        public bool HasObjective(string objective)
+        {
+            return objectives.Contains(objective);
+            //foreach (var objective in objectives)
+            //{
+            //    if (objective.reference == objectiveRef)
+            //    {
+            //        return true;
+            //    }
+            //}
+            //return false;
+        }
 
         //public static Quest GetByName(string questName)
         //{
