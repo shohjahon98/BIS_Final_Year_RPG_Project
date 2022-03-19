@@ -113,6 +113,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9712ccfac9252f748ba3892f9dc87205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7329771742225112238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780792366920096998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b8ba07ad17acc4285f8bf059a1f5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: e31b2ee01a544ca49aab132e3ef0a75c, type: 2}
+    completedObjectives:
+    - a
+    - b
+  - quest: {fileID: 11400000, guid: 0d698dfa40866b9418a35c400b432dcc, type: 2}
+    completedObjectives:
+    - 2
+  - quest: {fileID: 11400000, guid: 0d698dfa40866b9418a35c400b432dcc, type: 2}
+    completedObjectives: []
 --- !u!1001 &1627233938469401966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -578,15 +600,15 @@ PrefabInstance:
       objectReference: {fileID: 1627233938469200270}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
---- !u!4 &1627233938469225790 stripped
+--- !u!4 &1627233938469210192 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 438352, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 490814, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469201724 stripped
+--- !u!4 &1627233938469244716 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 463442, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 457282, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
@@ -620,9 +642,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469244716 stripped
+--- !u!4 &1627233938469201724 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 457282, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 463442, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
@@ -806,15 +828,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469282240 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 414894, guid: 679ff741e12a7e740819ede24a7000b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1627233938469401966}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1627233938469286752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411150, guid: 679ff741e12a7e740819ede24a7000b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1627233938469401966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1627233938469240344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 428918, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
@@ -848,15 +870,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469210192 stripped
+--- !u!4 &1627233938469282240 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 490814, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 414894, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469240344 stripped
+--- !u!4 &1627233938469225790 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 428918, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 438352, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
