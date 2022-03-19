@@ -41,10 +41,10 @@ namespace RPG.Quests
              return objectives.Length;
          }
 
-        //public IEnumerable<Objective> GetObjectives()
-        //{
-        //    return objectives;
-        //}
+          public IEnumerable<string> GetObjectives()
+          {
+             return objectives;
+          }
 
         //public IEnumerable<Reward> GetRewards()
         //{

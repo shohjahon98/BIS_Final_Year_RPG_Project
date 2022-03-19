@@ -1,39 +1,47 @@
-﻿//using System;
-//using System.Collections;
-//using System.Collections.Generic;
-//using RPG.Quests;
-//using TMPro;
-//using UnityEngine;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using RPG.Quests;
+using TMPro;
+using UnityEngine;
 
-//namespace RPG.UI.Quests
-//{
-//    public class QuestTooltipUI : MonoBehaviour
-//    {
-//        [SerializeField] TextMeshProUGUI title;
-//        [SerializeField] Transform objectiveContainer;
-//        [SerializeField] GameObject objectivePrefab;
+namespace RPG.UI.Quests
+{
+    public class QuestTooltipUI : MonoBehaviour
+    {
+          [SerializeField] TextMeshProUGUI title;
+          [SerializeField] Transform objectiveContainer;
+          [SerializeField] GameObject objectivePrefab;
 //        [SerializeField] GameObject objectiveIncompletePrefab;
 //        [SerializeField] TextMeshProUGUI rewardText;
 
-//        public void Setup(QuestStatus status)
-//        {
+        public void Setup(Quest quest)
+        {
 //            Quest quest = status.GetQuest();
-//            title.text = quest.GetTitle();
-//            foreach (Transform item in objectiveContainer)
-//            {
-//                Destroy(item.gameObject);
-//            }
-//            foreach (var objective in quest.GetObjectives())
-//            {
-//                GameObject prefab = objectiveIncompletePrefab;
-//                if (status.IsObjectiveComplete(objective.reference))
-//                {
-//                    prefab = objectivePrefab;
-//                }
-//                GameObject objectiveInstance = Instantiate(prefab, objectiveContainer);
-//                TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
-//                objectiveText.text = objective.description;
-//            }
+              title.text = quest.GetTitle();
+            objectiveContainer.DetachChildren();
+            foreach (string objective in quest.GetObjectives())
+            {
+                GameObject objectiveInstance = Instantiate(objectivePrefab, objectiveContainer);
+                TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
+                objectiveText.text = objective;
+
+            }
+            //foreach (Transform item in objectiveContainer)
+            //{
+            //    Destroy(item.gameObject);
+            //}
+            //            foreach (var objective in quest.GetObjectives())
+            //            {
+            //                GameObject prefab = objectiveIncompletePrefab;
+            //                if (status.IsObjectiveComplete(objective.reference))
+            //                {
+            //                    prefab = objectivePrefab;
+            //                }
+            //                GameObject objectiveInstance = Instantiate(prefab, objectiveContainer);
+            //                TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
+            //                objectiveText.text = objective.description;
+        }
 //            rewardText.text = GetRewardText(quest);
 //        }
 
@@ -59,5 +67,5 @@
 //            rewardText += ".";
 //            return rewardText;
 //        }
-//    }
-//}
+    }
+}
