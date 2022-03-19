@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &2341127397508020738
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780792366920096998}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &1482819223594760826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,9 +584,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469244716 stripped
+--- !u!4 &1627233938469201724 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 457282, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 463442, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
@@ -604,9 +620,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1627233938469201724 stripped
+--- !u!4 &1627233938469244716 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 463442, guid: 679ff741e12a7e740819ede24a7000b7,
+  m_CorrespondingSourceObject: {fileID: 457282, guid: 679ff741e12a7e740819ede24a7000b7,
     type: 3}
   m_PrefabInstance: {fileID: 1627233938469401966}
   m_PrefabAsset: {fileID: 0}
@@ -936,6 +952,22 @@ PrefabInstance:
       propertyPath: shouldUseModifiers
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3473738075045022791, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: startingLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473738075045022791, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: characterClass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473738075045022791, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
+      objectReference: {fileID: 6075126845752632958, guid: 1dc65ece1ebba8149a512ca916402bec,
+        type: 3}
     - target: {fileID: 5710320302327910517, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
       propertyPath: m_Name
@@ -1000,6 +1032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7500770205036369345, guid: d229a6dc847410947956ddf85b76962c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8347789876870387214, guid: d229a6dc847410947956ddf85b76962c,
         type: 3}
