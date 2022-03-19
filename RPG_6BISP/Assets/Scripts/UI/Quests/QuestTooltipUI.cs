@@ -12,7 +12,7 @@ namespace RPG.UI.Quests
           [SerializeField] TextMeshProUGUI title;
           [SerializeField] Transform objectiveContainer;
           [SerializeField] GameObject objectivePrefab;
-            [SerializeField] GameObject objectiveIncompletePrefab;
+          [SerializeField] GameObject objectiveIncompletePrefab;
 //        [SerializeField] TextMeshProUGUI rewardText;
 
         public void Setup(QuestStatus status)
@@ -27,25 +27,11 @@ namespace RPG.UI.Quests
                 {
                     prefab = objectivePrefab;
                 }
-                GameObject objectiveInstance = Instantiate(objectivePrefab, objectiveContainer);
+                GameObject objectiveInstance = Instantiate(prefab, objectiveContainer);
                 TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
                 objectiveText.text = objective;
 
             }
-            //foreach (Transform item in objectiveContainer)
-            //{
-            //    Destroy(item.gameObject);
-            //}
-            //            foreach (var objective in quest.GetObjectives())
-            //            {
-            //                GameObject prefab = objectiveIncompletePrefab;
-            //                if (status.IsObjectiveComplete(objective.reference))
-            //                {
-            //                    prefab = objectivePrefab;
-            //                }
-            //                GameObject objectiveInstance = Instantiate(prefab, objectiveContainer);
-            //                TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
-            //                objectiveText.text = objective.description;
         }
 //            rewardText.text = GetRewardText(quest);
 //        }

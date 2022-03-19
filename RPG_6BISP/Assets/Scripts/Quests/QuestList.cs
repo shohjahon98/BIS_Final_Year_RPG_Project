@@ -10,28 +10,26 @@ namespace RPG.Quests
 {
     public class QuestList : MonoBehaviour
     {
-        [SerializeField] QuestStatus[] statuses;
 
+        List<QuestStatus> statuses = new List<QuestStatus>();
 
+        public event Action onUpdate;
 
-        //        List<QuestStatus> statuses = new List<QuestStatus>();
+        private void Update()
+        {
+           // CompleteObjectivesByPredicates();
+        }
 
-        //        public event Action onUpdate;
-
-        //        private void Update() {
-        //            CompleteObjectivesByPredicates();
-        //        }
-
-        //        public void AddQuest(Quest quest)
-        //        {
-        //            if (HasQuest(quest)) return;
-        //            QuestStatus newStatus = new QuestStatus(quest);
-        //            statuses.Add(newStatus);
-        //            if (onUpdate != null)
-        //            {
-        //                onUpdate();
-        //            }
-        //        }
+        public void AddQuest(Quest quest)
+        {
+           // if (HasQuest(quest)) return;
+            QuestStatus newStatus = new QuestStatus(quest);
+            statuses.Add(newStatus);
+            if (onUpdate != null)
+            {
+                onUpdate();
+            }
+        }
 
         //        public void CompleteObjective(Quest quest, string objective)
         //        {
@@ -52,7 +50,7 @@ namespace RPG.Quests
         //            return GetQuestStatus(quest) != null;
         //        }
 
-        public IEnumerable<QuestStatus> GetStatues()
+        public IEnumerable<QuestStatus> GetStatuses()
         {
             return statuses;
         }

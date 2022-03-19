@@ -5,30 +5,29 @@ using UnityEngine;
 
 namespace RPG.Quests
 {
-    [System.Serializable]
     public class QuestStatus
     {
-        [SerializeField] Quest quest;
-        [SerializeField] List<string> completedObjectives;
+        Quest quest;
+        List<string> completedObjectives = new List<string>();
 
-//        [System.Serializable]
-//        class QuestStatusRecord
-//        {
-//            public string questName;
-//            public List<string> completedObjectives;
-//        }
+        //        [System.Serializable]
+        //        class QuestStatusRecord
+        //        {
+        //            public string questName;
+        //            public List<string> completedObjectives;
+        //        }
 
-//        public QuestStatus(Quest quest)
-//        {
-//            this.quest = quest;
-//        }
+        public QuestStatus(Quest quest)
+        {
+            this.quest = quest;
+        }
 
-//        public QuestStatus(object objectState)
-//        {
-//            QuestStatusRecord state = objectState as QuestStatusRecord;
-//            quest = Quest.GetByName(state.questName);
-//            completedObjectives = state.completedObjectives;
-//        }
+        //        public QuestStatus(object objectState)
+        //        {
+        //            QuestStatusRecord state = objectState as QuestStatusRecord;
+        //            quest = Quest.GetByName(state.questName);
+        //            completedObjectives = state.completedObjectives;
+        //        }
 
         public Quest GetQuest()
         {
