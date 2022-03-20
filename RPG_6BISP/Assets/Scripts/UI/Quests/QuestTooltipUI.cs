@@ -19,7 +19,10 @@ namespace RPG.UI.Quests
         {
             Quest quest = status.GetQuest();
             title.text = quest.GetTitle();
-            objectiveContainer.DetachChildren();
+            foreach (Transform item in objectiveContainer)
+            {
+                Destroy(item.gameObject);
+            }
             foreach (var objective in quest.GetObjectives())
             {
                 GameObject prefab = objectiveIncompletePrefab;
@@ -49,7 +52,7 @@ namespace RPG.UI.Quests
                 if (reward.number > 1)
                 {
                     rewardText += reward.number + " ";
-                } 
+                }
                 rewardText += reward.item.GetDisplayName();
             }
             if (rewardText == "")
