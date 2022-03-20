@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: Mother hubbards bunions
   m_EditorClassIdentifier: 
   objectives:
-  - 2
-  - 3
+  - reference: 2
+    description: Go Angry it.
+  rewards:
+  - number: 3
+    item: {fileID: 11400000, guid: dd28949e6cb9fdf4dba3c24897051017, type: 2}
+  - number: 2
+    item: {fileID: 11400000, guid: b4e5630aa2ed9da4a898dd1fce79dffa, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: b4e5630aa2ed9da4a898dd1fce79dffa, type: 2}
