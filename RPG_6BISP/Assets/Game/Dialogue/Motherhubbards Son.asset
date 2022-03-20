@@ -18,6 +18,7 @@ MonoBehaviour:
   - d27721cd-beda-41ea-aca8-829d5bb8e95f
   - a8c3828f-0807-4b8a-ba19-6384915ee2a6
   - 3fffa233-e79f-4752-952d-10f0515d4c1d
+  - e33cf16d-f611-4ca2-b509-952f985ddc8a
   rect:
     serializedVersion: 2
     x: -1
@@ -27,8 +28,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-2012176221971539332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,8 +53,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: TestObjective
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +73,8 @@ MonoBehaviour:
   - {fileID: -2012176221971539332}
   - {fileID: 5654742983164670363}
   - {fileID: 2300581542410144418}
+  - {fileID: 7671369891523622842}
+  - {fileID: 8751327592797429401}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &71905877645076814
 MonoBehaviour:
@@ -100,8 +101,12 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Mother hubbards bunions
+        negate: 1
 --- !u!114 &2300581542410144418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,8 +131,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &5654742983164670363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,16 +150,24 @@ MonoBehaviour:
   - d48e6732-09ab-48e3-be5c-9303e50a8dcf
   rect:
     serializedVersion: 2
-    x: 231
-    y: 236
+    x: 251
+    y: 237
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: HasQuest
-    parameters:
-    - Mother hubbards bunions
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Mother hubbards bunions
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Mother hubbards bunions
+        negate: 1
 --- !u!114 &5972575435736277841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,5 +192,69 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
+--- !u!114 &7671369891523622842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e056b790ef96254a9293f64d01994ef, type: 3}
+  m_Name: e33cf16d-f611-4ca2-b509-952f985ddc8a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have a foot cream!
+  children:
+  - 3bd99088-a873-48be-babc-3a5841274748
+  rect:
+    serializedVersion: 2
+    x: 254
+    y: 336
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Mother hubbards bunions
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Mother hubbards bunions
+        negate: 0
+      - predicate: HasInventoryItem
+        parameters:
+        - 371e300c-2774-4db5-889a-ced4aae5c17e
+        negate: 0
+--- !u!114 &8751327592797429401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e056b790ef96254a9293f64d01994ef, type: 3}
+  m_Name: 3bd99088-a873-48be-babc-3a5841274748
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Amazing, thx!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 504
+    y: 336
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
