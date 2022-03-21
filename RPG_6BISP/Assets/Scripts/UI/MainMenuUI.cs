@@ -10,7 +10,7 @@ namespace RPG.UI
     {
         LazyValue<SavingWrapper> savingWrapper;
 
-        //[SerializeField] TMP_InputField newGameNameField;
+        [SerializeField] TMP_InputField newGameNameField;
 
         private void Awake()
         {
@@ -27,10 +27,10 @@ namespace RPG.UI
             savingWrapper.value.ContinueGame();
         }
 
-        //        public void NewGame()
-        //        {
-        //            savingWrapper.value.NewGame(newGameNameField.text);
-        //        }
+        public void NewGame()
+        {
+            savingWrapper.value.NewGame(newGameNameField.text);
+        }
 
         //        public void QuitGame()
         //        {
