@@ -20,7 +20,7 @@ namespace GameDevTV.Saving
     {
         // CONFIG DATA
         [Tooltip("The unique ID is automatically generated in a scene file if " +
-        "left empty. Do not set in a prefab unless you want all instances to " + 
+        "left empty. Do not set in a prefab unless you want all instances to " +
         "be linked.")]
         [SerializeField] string uniqueIdentifier = "";
 
@@ -69,13 +69,14 @@ namespace GameDevTV.Saving
         // PRIVATE
 
 #if UNITY_EDITOR
-        private void Update() {
+        private void Update()
+        {
             if (Application.IsPlaying(gameObject)) return;
             if (string.IsNullOrEmpty(gameObject.scene.path)) return;
 
             SerializedObject serializedObject = new SerializedObject(this);
             SerializedProperty property = serializedObject.FindProperty("uniqueIdentifier");
-            
+
             if (string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
             {
                 property.stringValue = System.Guid.NewGuid().ToString();
