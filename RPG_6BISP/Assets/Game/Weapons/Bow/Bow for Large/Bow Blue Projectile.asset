@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99227a359b6e964185d0f5ea28dc52b, type: 3}
   m_Name: Bow Blue Projectile
   m_EditorClassIdentifier: 
+  itemID: 15bc5fcb-d613-48f1-b16f-ac631f028249
+  displayName: Bow Blue
+  description: 
+  icon: {fileID: 21300000, guid: f8078c2bb5ee88d4a9472f76e501e0f3, type: 3}
+  pickup: {fileID: 4065723554757245335, guid: 71f11b1e6fc98ee4abd5e028bc226be3, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 5af44dd035a76a6458bec793cc3e4ec0, type: 2}
-  equippedPrefab: {fileID: 1829914322100113183, guid: c3ec9a1ffdf53ec4f8c47a005d5221e2,
+  equippedPrefab: {fileID: -8162963857486506938, guid: 3366ef2e0a8b2c0478a61207bec08aeb,
     type: 3}
   weaponDamage: 10
+  percentageBonus: 0
   weaponRange: 20
   isRightHanded: 0
   projectile: {fileID: 7116605518163097070, guid: bf6337a298a517845ac818e6e5381d3d,
