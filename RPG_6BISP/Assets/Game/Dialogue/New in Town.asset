@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2ef4c628-dfdf-4c16-a423-ae56d7da7a18
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Did I say Newton? I'mactually from Springville.
+  text: Did I say Newton? I'm actually from Springville.
   children:
   - 0be9e893-89e8-4b70-b574-6d7bd53a6c81
   rect:
@@ -25,8 +25,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-5948958521630366223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +39,7 @@ MonoBehaviour:
   m_Name: c93c7760-ca78-4cb0-9dc7-6c7290b25bf5
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: You don't look like you'refrom around here.
+  text: You don't look like you're from around here.
   children:
   - f0aa2eaa-889e-4ead-95a8-c5b722d30bcf
   - 5b6a4f12-e783-4bfd-895e-ac74eb397813
@@ -53,8 +52,7 @@ MonoBehaviour:
   onEnterAction: TestRootEntry
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-4162820820918832230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,7 +66,7 @@ MonoBehaviour:
   m_Name: 845db512-fb07-4bcd-80a6-e70216d24607
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Mr. Bowler is a goodfriend of mine! '
+  text: 'Mr. Bowler is a good friend of mine! '
   children:
   - e94acea3-df7b-4375-bf33-94f02a658642
   rect:
@@ -80,8 +78,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-1619056003240520718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +92,7 @@ MonoBehaviour:
   m_Name: 0be9e893-89e8-4b70-b574-6d7bd53a6c81
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Oh really? Then you mustknow Mr. Bowler. '
+  text: 'Oh really? Then you must know Mr. Bowler. '
   children:
   - 845db512-fb07-4bcd-80a6-e70216d24607
   - 31e524eb-1d6f-43e3-8a99-c303e627aaf5
@@ -108,8 +105,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: TestAIExit
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-464037922680935683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,8 +130,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: Attack
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,8 +181,7 @@ MonoBehaviour:
   onEnterAction: TestSelection
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &3140992483988337905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,8 +207,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &3988277478135911235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,15 +226,14 @@ MonoBehaviour:
   - 96b0d194-608d-42a2-914b-343333bf6571
   rect:
     serializedVersion: 2
-    x: 760
-    y: 99
+    x: 766
+    y: 97
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &4078718152327435111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +247,7 @@ MonoBehaviour:
   m_Name: f22f7802-2e45-464c-8b1e-7f1d8f9811d8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Newton, eh? I heard there''strouble brewing down there. '
+  text: 'Newton, eh? I heard there''s trouble brewing down there. '
   children:
   - 2ef4c628-dfdf-4c16-a423-ae56d7da7a18
   - a184b5de-11a6-411c-b506-c5e9d743296f
@@ -268,8 +260,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &5593543039766787232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +274,7 @@ MonoBehaviour:
   m_Name: a184b5de-11a6-411c-b506-c5e9d743296f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'I haven''t heard aboutany trouble. '
+  text: 'I haven''t heard about any trouble. '
   children:
   - 96b0d194-608d-42a2-914b-343333bf6571
   rect:
@@ -295,8 +286,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &6255560231278050309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +300,7 @@ MonoBehaviour:
   m_Name: 96b0d194-608d-42a2-914b-343333bf6571
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Don''t you worry about it. Say,do you have something to eat?I''m starving. '
+  text: 'Don''t you worry about it. Say,do you have something to eat? I''m starving. '
   children: []
   rect:
     serializedVersion: 2
@@ -321,5 +311,4 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: HasQuest
   condition:
-    predicate: 
-    parameters: []
+    and: []
