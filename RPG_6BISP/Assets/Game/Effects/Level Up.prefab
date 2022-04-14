@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &336252231203093385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522088004159655917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a85805d8b40a94fa7ac390cbeb57d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetToDestroy: {fileID: 6075126845752632958}
 --- !u!1 &6075126845752632958
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,21 +38,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 716084888001791364}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
       propertyPath: m_Name
       value: CFX_CircularLightWall
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
       propertyPath: m_RootOrder
@@ -111,58 +86,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: OnlyDeactivate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 19900000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19900004, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19900006, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 336252231203093385, guid: 2207630ad17aac94b8a0006b9199d875,
+        type: 3}
+      propertyPath: targetToDestroy
+      value: 
+      objectReference: {fileID: 6075126845752632958}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2207630ad17aac94b8a0006b9199d875, type: 3}
---- !u!1 &1522088004159655917 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: 2207630ad17aac94b8a0006b9199d875,
-    type: 3}
-  m_PrefabInstance: {fileID: 1522088004159555915}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1522088004159951821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 2207630ad17aac94b8a0006b9199d875,
