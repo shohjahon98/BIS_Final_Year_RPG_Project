@@ -13,7 +13,7 @@ namespace RPG.Control
         [SerializeField] Transform respawnLocation;
         [SerializeField] float respawnDelay = 3;
         [SerializeField] float fadeTime = 0.2f;
-        [SerializeField] float healthRegenPercentage = 20;
+        [SerializeField] float healthRegenPercentage = 80;
         [SerializeField] float enemyHealthRegenPercentage = 20;
 
         private void Awake()
@@ -67,12 +67,11 @@ namespace RPG.Control
 
         private void RespawnPlayer()
         {
-            
-                Vector3 postionDelta = respawnLocation.position - transform.position;
-                GetComponent<NavMeshAgent>().Warp(respawnLocation.position);
-                Health health = GetComponent<Health>();
-                health.Heal(health.GetMaxHealthPoints() * healthRegenPercentage / 100);
-                ICinemachineCamera activeVirtualCamera = FindObjectOfType<CinemachineBrain>().ActiveVirtualCamera;
+          Vector3 postionDelta = respawnLocation.position - transform.position;
+          GetComponent<NavMeshAgent>().Warp(respawnLocation.position);
+          Health health = GetComponent<Health>();
+          health.Heal(health.GetMaxHealthPoints() * healthRegenPercentage / 100);
+          ICinemachineCamera activeVirtualCamera = FindObjectOfType<CinemachineBrain>().ActiveVirtualCamera;
             if (activeVirtualCamera.Follow == transform)
             {
                 activeVirtualCamera.OnTargetObjectWarped(transform, postionDelta);

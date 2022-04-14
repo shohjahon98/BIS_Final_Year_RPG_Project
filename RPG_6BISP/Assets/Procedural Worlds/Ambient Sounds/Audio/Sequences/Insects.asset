@@ -18,13 +18,7 @@ MonoBehaviour:
   m_eventsMix: 0
   m_events: []
   m_clipData:
-  - m_clip: {fileID: 8300000, guid: 19d80d1c21bfce246a9d6fc7655277ef, type: 3}
-    m_volume: 1
-  - m_clip: {fileID: 8300000, guid: b5535000ab4332747b85f05aa8e90afe, type: 3}
-    m_volume: 1
-  - m_clip: {fileID: 8300000, guid: f6410ce01de95464a9d3e265ddbad85f, type: 3}
-    m_volume: 1
-  - m_clip: {fileID: 8300000, guid: 75a605597f3862243bf5bd5ec4b6b57b, type: 3}
+  - m_clip: {fileID: 8300000, guid: 92e0cafe6dcf2164db1d12609ee5574a, type: 3}
     m_volume: 1
   m_clips: []
   m_volume: 1
@@ -32,7 +26,7 @@ MonoBehaviour:
   m_randomizeOrder: 0
   m_crossFade: 0
   m_trackFadeTime: 2.5
-  m_volumeFadeTime: 1
+  m_volumeFadeTime: 2
   m_playbackSpeedFadeTime: 1
   m_delayChance: 100
   m_delayFadeTime: 0
